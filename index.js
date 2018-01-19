@@ -69,8 +69,7 @@ function createRock(x) {
   }
 
   moveRock(rock)
-  // Add the rock to ROCKS so that we can remove all rocks
-  // when there's a collision
+
   ROCKS.push(rock)
 
   return rock
