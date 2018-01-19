@@ -56,9 +56,9 @@ function createRock(x) {
 
   GAME.append(rock)
 
-  function moveRock() {
+  function moveRock(el) {
     function step() {
-      rock.style.top = `${top += 2}px`
+      el.style.top = `${top += 2}px`
       
       if (top < 380) {
         window.requestAnimationFrame(step)
@@ -68,7 +68,7 @@ function createRock(x) {
     
   }
 
-  moveRock()
+  moveRock(el)
 
   ROCKS.push(rock)
 
