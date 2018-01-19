@@ -54,13 +54,9 @@ function createRock(x) {
 
   rock.style.top = top
 
-  /**
-   * Now that we have a rock, we'll need to append
-   * it to GAME and move it downwards.
-   */
   GAME.append(rock)
 
-  function moveRock() {
+  function moveRock(rock) {
     function step() {
       rock.style.top = `${top += 2}px`
       
@@ -73,7 +69,7 @@ function createRock(x) {
   }
 
   // We should kick of the animation of the rock around here
-  moveRock()
+  moveRock(rock)
   // Add the rock to ROCKS so that we can remove all rocks
   // when there's a collision
   ROCKS.push(rock)
