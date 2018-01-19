@@ -66,7 +66,7 @@ function createRock(x) {
       else if (top < 380) {
         window.requestAnimationFrame(step)
       } else if (top = 380) {
-        el.
+        GAME.removeChild(el)
       }
     }
     window.requestAnimationFrame(step)
