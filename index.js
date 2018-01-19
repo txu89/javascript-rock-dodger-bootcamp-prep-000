@@ -60,7 +60,7 @@ function createRock(x) {
     function step() {
       el.style.top = `${top += 2}px`
       
-      if (checkCollision()) {
+      if (checkCollision(rock)) {
         endGame()
       }
       else if (top < 380) {
