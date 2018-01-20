@@ -84,7 +84,7 @@ function endGame() {
   clearInterval(gameInterval)
   window.removeEventListener('keydown', moveDodger)
   for (let i = 0; i < ROCKS.length; i++) {
-    if (ROCKS[i]) {
+    if (ROCKS[i] != undefined) {
       GAME.removeChild(ROCKS[i])
     }
   }
