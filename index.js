@@ -86,7 +86,7 @@ function endGame() {
   console.log(ROCKS)
   for (let i = 0; i < ROCKS.length; i++) {
     if (ROCKS[i].className === 'rock') {
-      GAME.remove(ROCKS[i])
+      document.remove(ROCKS[i])
     }
   }
   return alert('YOU LOSE!')
