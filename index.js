@@ -86,7 +86,7 @@ function endGame() {
     GAME.removeChild(ROCKS[i])
   }
   ROCKS = []
-  window.removeEve
+  window.removeEventListener('keydown', moveDodger)
   alert('YOU LOSE!')
 }
 
