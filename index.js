@@ -49,6 +49,7 @@ function createRock(x) {
 
   rock.style.top = top
 
+  GAME.append(rock)
 
   function moveRock(el) {
     function step() {
