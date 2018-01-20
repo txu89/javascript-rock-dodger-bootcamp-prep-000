@@ -83,6 +83,7 @@ function createRock(x) {
 function endGame() {
   clearInterval(gameInterval)
   window.removeEventListener('keydown', moveDodger)
+  console.log(ROCKS)
   for (let i = 0; i < ROCKS.length; i++) {
     if (ROCKS[i].className === 'rock') {
       GAME.removeChild(ROCKS[i])
