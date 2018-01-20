@@ -86,6 +86,7 @@ function endGame() {
     GAME.removeChild(ROCKS[i])
   }
   ROCKS = []
+  window.removeEve
   alert('YOU LOSE!')
 }
 
