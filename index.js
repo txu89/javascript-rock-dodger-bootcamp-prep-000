@@ -85,11 +85,7 @@ function endGame() {
   for (let i = 0; i < ROCKS.length; i++) {
     GAME.removeChild(ROCKS[i])
   }
-  //window.removeEventListener('keydown', moveDodger)
-  if (e.which === LEFT_ARROW || RIGHT_ARROW) {
-    e.preventDefault()
-    e.stopPropagation()
-  }
+  window.removeEventListener('keydown', moveDodger)
   alert('YOU LOSE!')
 }
 
