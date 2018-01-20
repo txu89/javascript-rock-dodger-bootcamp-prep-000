@@ -55,7 +55,7 @@ function createRock(x) {
     function step() {
       el.style.top = `${top += 2}px`
       
-      if (checkCollision(rock)) {
+      if (checkCollision(el)) {
         endGame()
       } else if (top < 380) {
         window.requestAnimationFrame(step)
