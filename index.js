@@ -85,7 +85,7 @@ function endGame() {
   // for (let i = 0; i < ROCKS.length; i++) {
   //   GAME.removeChild(ROCKS[i])
   // }
-  // window.removeEventListener('keydown', moveDodger)
+  window.removeEventListener('keydown', moveDodger)
   return alert('YOU LOSE!')
 }
 
