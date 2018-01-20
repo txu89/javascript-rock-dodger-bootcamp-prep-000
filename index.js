@@ -63,7 +63,7 @@ function createRock(x) {
     
   }
 
-  moveRock(el)
+  moveRock(rock)
 
   ROCKS.push(rock)
 
