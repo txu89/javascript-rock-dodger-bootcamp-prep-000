@@ -81,6 +81,7 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
+  alert('game over!')
 }
 
 function moveDodger(e) {
